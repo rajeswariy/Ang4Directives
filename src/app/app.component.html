@@ -1,0 +1,13 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1 blueColored>
+   Hello World</h1>
+   </div>
+ <!--  this div is not part of DOM  -->
+<!--    <div *ngIf="visible;then evenClicked else oddClicked">This Works</div> -->
+   
+     <div *ngIf="visible; else oddClicked">This Works</div>
+   <button (click)="toggleDiv()">Toggle</button>
+   
+   <ng-template #oddClicked>odd no of clicks</ng-template>
+   <ng-template #evenClicked>even no of clicks</ng-template>
